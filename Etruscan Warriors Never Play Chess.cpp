@@ -28,6 +28,21 @@ int main()
 		*j = nro;
 	}
 	cout<<"organizando sus guerreros en filas"<<endl;
-	
+	int k = 0;
+	int soldados_necesarios = 0;
+	int filas_necesarias = 0;
+	int o = 1;
+	int*h = i;
+	for(;h <= i + casos_prueba - 1;h++)
+	{
+		while(soldados_necesarios + (k + 1) <= *h)
+		{
+			k++;
+			soldados_necesarios += k;
+			filas_necesarias++;
+		}
+		cout<<"Las filas formadas del caso de prueba: "<< o <<" son: "<< filas_necesarias << endl;
+		o++;
+	}
 	return 0;
-}
+ }
