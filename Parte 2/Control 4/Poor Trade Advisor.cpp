@@ -29,7 +29,6 @@ int DFS(int u) {
 }
 
 main() {
-	//  freopen("749.inp", "r", stdin); freopen("749.out", "w", stdout);
 	int m, u, v, w;
 	while (scanf("%d %d", &n, &m) && (n || m)) {
 		For (i, 1, n) {
